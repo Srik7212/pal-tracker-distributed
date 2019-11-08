@@ -2,6 +2,7 @@
 applications:
 - name: tracker-registration
   instances: 1
+  memory: 500M
   routes:
   - route: registration-pal-sd.apps.evans.pal.pivotal.io
   path: Applications/RegistrationServer/bin/Release/netcoreapp2.1/publish

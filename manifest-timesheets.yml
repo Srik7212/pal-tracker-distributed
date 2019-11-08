@@ -2,6 +2,7 @@
 applications:
 - name: tracker-timesheets
   instances: 1
+  memory: 500M
   routes:
   - route: timesheets-pal-sd.apps.evans.pal.pivotal.io
   path: Applications/TimesheetsServer/bin/Release/netcoreapp2.1/publish
