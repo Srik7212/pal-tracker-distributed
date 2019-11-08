@@ -2,7 +2,7 @@
 applications:
 - name: tracker-backlog
   instances: 1
-  memory: 1000M
+  memory: 512M
   routes:
   - route: backlog-pal-sd.apps.evans.pal.pivotal.io
   path: Applications/BacklogServer/bin/Release/netcoreapp2.1/publish
