@@ -2,7 +2,6 @@
 applications:
 - name: tracker-allocations
   instances: 1
-  memory: 512M
   routes:
   - route: allocations-pal-sd.apps.evans.pal.pivotal.io
   path: Applications/AllocationsServer/bin/Release/netcoreapp2.1/publish
