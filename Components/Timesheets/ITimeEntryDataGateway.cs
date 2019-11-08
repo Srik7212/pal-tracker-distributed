@@ -3,11 +3,10 @@ using System.Collections.Generic;
 
 namespace Timesheets
 {
-    //comments
+    //commentsgit 
     public interface ITimeEntryDataGateway
     {
         TimeEntryRecord Create(long projectId, long userId, DateTime date, int hours);
 
-        List<TimeEntryRecord> FindBy(long userId);
-    }
+        List<TimeEntryRecord> FindBy(long userId);    }
 }
