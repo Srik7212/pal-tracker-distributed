@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Timesheets
 {
+    //comments
     public interface ITimeEntryDataGateway
     {
         TimeEntryRecord Create(long projectId, long userId, DateTime date, int hours);
