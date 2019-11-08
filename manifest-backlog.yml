@@ -4,8 +4,8 @@ applications:
   instances: 1
   routes:
   - route: backlog-pal-sd.cfapps.io
-  path: Applications/BacklogServer/bin/Release/netcoreapp2.1/publish
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-sd.cfapps.io
+  path: Applications/BacklogServer/bin/Release/netcoreapp2.1/publish  
   services:
   - tracker-backlog-database
+  - tracker-service-registry
+  

@@ -8,6 +8,7 @@ using Projects;
 using Steeltoe.CloudFoundry.Connector.MySql.EFCore;
 using Users;
 using Pivotal.Discovery.Client;
+
 namespace RegistrationServer
 {
     public class Startup

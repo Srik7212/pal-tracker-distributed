@@ -7,7 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Steeltoe.CloudFoundry.Connector.MySql.EFCore;
 using Timesheets;
+using Steeltoe.Common.Discovery;
 using Pivotal.Discovery.Client;
+
 namespace TimesheetsServer
 {
     public class Startup
@@ -30,9 +32,9 @@ namespace TimesheetsServer
             services.AddDiscoveryClient(Configuration);
             services.AddSingleton<IProjectClient>(sp =>
             {
-               
-var handler = new DiscoveryHttpClientHandler(sp.GetService<IDiscoveryClient>());
-           var httpClient = new HttpClient(handler, false)
+
+                var handler = new DiscoveryHttpClientHandler(sp.GetService<IDiscoveryClient>());
+                var httpClient = new HttpClient(handler, false)
                 {
                     BaseAddress = new Uri(Configuration.GetValue<string>("REGISTRATION_SERVER_ENDPOINT"))
                 };
